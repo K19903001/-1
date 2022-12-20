@@ -1,0 +1,70 @@
+.modal-wrapper{
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  position: absolute;
+  z-index: 9;
+  background: rgb(0, 0, 0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-modal{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 8px;
+  
+}
+.hidden{
+  display: none;
+}
+.modal__close {
+  width: 10px;
+   position: relative;
+   left: 210px;
+  z-index: 1;
+  
+  cursor: pointer;
+}
+.modal__close:before {
+  content: '+';
+  color: #337AB7;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(45deg);
+  font-size: 50px;
+  line-height: 0;
+  top: -5px;
+  left: 6px;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+
+.modal__close:hover:before {
+  transform: scale(0.8) rotate(45deg);
+  color: rgb(12, 12, 12);
+}
+.catCover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(206, 205, 175, 0.65);
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+[data-cardCatShow] {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  width: 70%;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  background: #dc3545;
+}
