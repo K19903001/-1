@@ -4,7 +4,6 @@ class Api {
     this.name = name;
   }
 
-
   getCats() {
     return fetch(`${this.url}${this.name}/show`)
   }
